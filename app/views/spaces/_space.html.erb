@@ -1,0 +1,15 @@
+<div class="col-md-3">
+	<div class="thumbnail">
+		<%= link_to space_path(space.name) do%>
+		<div class="caption">
+			<h4><%= space.name %></h4>
+		</div>
+		<div class="row">
+			<h5><%= space.wreck_or_reuse %></h5>
+			<h5><%= space.fee_or_free %></h5>
+			<h5><%= space.practice_or_perform %></h5>
+			<h5><%= space.sq_footage %></h5>
+		</div>
+		<% end %>
+	</div>
+</div>

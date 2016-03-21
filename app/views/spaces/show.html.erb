@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @space.name %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @space.user_id %>
+</p>
+
+<p>
+  <strong>Wreck or reuse:</strong>
+  <%= @space.wreck_or_reuse %>
+</p>
+
+<p>
+  <strong>Fee or free:</strong>
+  <%= @space.fee_or_free %>
+</p>
+
+<p>
+  <strong>Practice or perform:</strong>
+  <%= @space.practice_or_perform %>
+</p>
+
+<p>
+  <strong>Sq footage:</strong>
+  <%= @space.sq_footage %>
+</p>
+
+<%= link_to 'Edit', edit_space_path(@space) %> |
+<%= link_to 'Back', spaces_path %>
