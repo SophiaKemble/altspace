@@ -18,6 +18,22 @@ Rails.application.routes.draw do
 
       resources :users
 
+  # Routes for Mailboxer gem
+
+      resources :conversations, only: [:index, :show, :destroy] do
+        member do
+          post :reply
+          post :restore
+          post :mark_as_read
+        end
+          collection do
+            delete :empty_trash
+          end
+      end
+
+
+      resources :messages, only: [:new, :create]
+
 
   # Example resource route with options:
   #   resources :products do

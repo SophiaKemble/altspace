@@ -3,6 +3,18 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 gem 'simple_form'
 gem 'devise'
 gem 'gravatarify', '~> 3.1.1'
+gem 'gravatar_image_tag'
+
+# Will paginate: Still don't know what this does
+gem 'bootstrap-sass'
+gem 'bootstrap-will_paginate'
+gem 'will_paginate'
+
+gem 'mailboxer'
+
+# For mailboxer: makes selecting participants more user-friendly
+gem 'chosen-rails'
+gem 'jquery-turbolinks'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
